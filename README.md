@@ -1,1 +1,3 @@
 # BankLoanDashboard
+Dalam proyek ini, saya merancang sebuah dashboard interaktif menggunakan Power BI untuk menganalisis data aplikasi pinjaman bank. Tujuan utama dari dashboard ini adalah memberikan gambaran menyeluruh terhadap performa pinjaman, baik dari sisi jumlah aplikasi, status pembayaran, hingga tren bulanan dan profil demografis peminjam.
+Dengan menyajikan metrik kunci seperti loan funded amount, interest rate, dan debt-to-income ratio, dashboard ini dapat membantu pihak manajemen atau analis risiko dalam mengambil keputusan berbasis data, mengidentifikasi pola risiko, serta mengoptimalkan strategi pendanaan di masa depan.
