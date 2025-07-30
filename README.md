@@ -2,11 +2,11 @@
 
 <p align="center">
   <img src="https://github.com/lailabudianti/BankLoanDashboard/blob/main/Project%20Bank%20Loan_Summary.jpg?raw=true" width="50%"/>
-  <img src="https://github.com/lailabudianti/BankLoanDashboard/blob/main/Project%20Bank%20Loan_Overview.jpg?raw=true" width="50%"/>
-  <img src="https://github.com/lailabudianti/BankLoanDashboard/blob/main/Project%20Bank%20Loan_Detail.jpg?raw=true" width="50%"/>
+  <img src="https://github.com/lailabudianti/BankLoanDashboard/blob/main/Project%20Bank%20Loan_Overview.jpg?raw=true" width="45%"/>
+  <img src="https://github.com/lailabudianti/BankLoanDashboard/blob/main/Project%20Bank%20Loan_Detail.jpg?raw=true" width="45%"/>
 </p>
 
-    Dalam proyek ini, saya merancang sebuah dashboard interaktif menggunakan Microsoft Power BI Desktop untuk menganalisis data aplikasi pinjaman bank. Tujuan utama dari dashboard ini adalah memberikan gambaran menyeluruh terhadap performa pinjaman, baik dari sisi jumlah aplikasi, status pembayaran, hingga tren bulanan dan profil demografis peminjam. Dashboard ini menyajikan metrik kunci seperti _loan funded amount_, _interest rate_, dan _debt-to-income ratio_ yang dapat membantu pihak manajemen atau analis risiko dalam mengambil keputusan berbasis data, mengidentifikasi pola risiko, serta mengoptimalkan strategi pendanaan.
+  Dalam proyek ini, saya merancang sebuah dashboard interaktif menggunakan Microsoft Power BI Desktop untuk menganalisis data aplikasi pinjaman bank. Tujuan utama dari dashboard ini adalah memberikan gambaran menyeluruh terhadap performa pinjaman, baik dari sisi jumlah aplikasi, status pembayaran, hingga tren bulanan dan profil demografis peminjam. Dashboard ini menyajikan metrik kunci seperti _loan funded amount_, _interest rate_, dan _debt-to-income ratio_ yang dapat membantu pihak manajemen atau analis risiko dalam mengambil keputusan berbasis data, mengidentifikasi pola risiko, serta mengoptimalkan strategi pendanaan.
 
 Untuk mendukung kebutuhan tersebut, Power BI diintegrasikan langsung dengan _Microsoft SQL Server_ sebagai sumber data utama. Seluruh data pinjaman disimpan dan dikelola dalam basis data relasional SQL Server. Koneksi antara Power BI dan SQL Server dilakukan melalui fitur _Direct Query_ maupun _Import Query_, tergantung pada kebutuhan analisis. Dengan pendekatan ini, proses pengambilan data dapat dilakukan secara otomatis dan terstruktur menggunakan bahasa SQL, lalu diolah lebih lanjut dalam Power BI untuk ditampilkan dalam bentuk visualisasi yang informatif dan interaktif. Integrasi ini memungkinkan pelaporan yang interaktif dan efisien, bahkan dapat digunakan oleh pengguna non-teknis tanpa harus berinteraksi langsung dengan database.
 
