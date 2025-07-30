@@ -1,4 +1,37 @@
-# Bank Loan Dashboard
+## 🏦 Bank Loan Analytics Dashboard
+
+The dashboard consists of three main sections:
+
+- **Summary**  
+  Provides an overall snapshot of loan performance, including total loan applications, funded amounts, amount received, average interest rates, and average debt-to-income (DTI) ratios. It also displays the proportion of good vs. bad loans, along with Month-to-Date (MTD) and Month-over-Month (MoM) indicators.
+
+- **Overview**  
+  Visualizes trends and distributions of loan applications by time (monthly), purpose, loan term, home ownership status, employment length, and geographical region. This section helps uncover demand patterns and borrower segmentation.
+
+- **Detail**  
+  An interactive table displaying individual loan records, including ID, loan purpose, interest rate, installment amount, and payment status. It is equipped with dynamic filters, allowing users to explore specific cases or segments in greater detail.
+
+---
+
+## 🛠 Tools & Technologies
+
+- **Microsoft Power BI Desktop** – for interactive data visualization and dashboard development  
+- **Microsoft SQL Server** – as the primary data source   
+- **DAX (Data Analysis Expressions)** – to calculate custom metrics and support dashboard logic  
+- **Many-to-One Data Relationships** – used to link the main loan dataset with a date reference table for time-based analysis
+
+---
+
+## 🎯 Project Objectives
+
+- Provide a comprehensive analysis of bank loan performance  
+- Support risk profiling and repayment behavior assessment  
+- Deliver a visual tool to assist managers and analysts in data-driven decision-making  
+- Apply best practices in Power BI and SQL Server integration for business reporting
+
+---
+
+## 📷 Dashboard Preview
 
 <p align="center">
   <img src="https://github.com/lailabudianti/BankLoanDashboard/blob/main/Project%20Bank%20Loan_Summary.jpg?raw=true" width="70%"/>
@@ -6,12 +39,9 @@
   <img src="https://github.com/lailabudianti/BankLoanDashboard/blob/main/Project%20Bank%20Loan_Detail.jpg?raw=true" width="45%"/>
 </p>
 
-  Dalam proyek ini, saya merancang sebuah dashboard interaktif menggunakan Microsoft Power BI Desktop untuk menganalisis data aplikasi pinjaman bank. Tujuan utama dari dashboard ini adalah memberikan gambaran menyeluruh terhadap performa pinjaman, baik dari sisi jumlah aplikasi, status pembayaran, hingga tren bulanan dan profil demografis peminjam. Dashboard ini menyajikan metrik kunci seperti _loan funded amount_, _interest rate_, dan _debt-to-income ratio_ yang dapat membantu pihak manajemen atau analis risiko dalam mengambil keputusan berbasis data, mengidentifikasi pola risiko, serta mengoptimalkan strategi pendanaan.
+---
 
-  Untuk mendukung kebutuhan tersebut, Power BI diintegrasikan langsung dengan _Microsoft SQL Server_ sebagai sumber data utama. Seluruh data pinjaman disimpan dan dikelola dalam basis data relasional SQL Server. Koneksi antara Power BI dan SQL Server dilakukan melalui fitur _Direct Query_ maupun _Import Query_, tergantung pada kebutuhan analisis. Dengan pendekatan ini, proses pengambilan data dapat dilakukan secara otomatis dan terstruktur menggunakan bahasa SQL, lalu diolah lebih lanjut dalam Power BI untuk ditampilkan dalam bentuk visualisasi yang informatif dan interaktif. Integrasi ini memungkinkan pelaporan yang interaktif dan efisien, bahkan dapat digunakan oleh pengguna non-teknis tanpa harus berinteraksi langsung dengan database.
+## 📝 Notes
 
-  Dalam proses pembangunan dashboard ini, saya juga melakukan pemodelan data untuk memastikan keterkaitan antar tabel dapat dianalisis secara efisien. Salah satu relasi yang saya bangun adalah hubungan many-to-one antara tabel utama bank_loan_data dengan tabel referensi waktu yang berisi atribut seperti date_loan, month, dan unique_month. Relasi ini memungkinkan analisis temporal, seperti tren bulanan jumlah aplikasi pinjaman, performa dana yang disalurkan, dan perubahan suku bunga dari waktu ke waktu. Dengan membentuk struktur relasi tersebut, saya dapat membuat visualisasi yang dinamis berbasis waktu, sekaligus memastikan agregasi data berjalan secara konsisten. Pendekatan ini juga mempermudah penerapan filter waktu secara global di seluruh halaman dashboard, yang penting untuk mendukung analisis berbasis periode tertentu seperti _Month-to-Date_ (MTD) dan _Month-over-Month_ (MoM).
-
-  Dashboard Bank Loan terdiri dari tiga segmen utama dalam struktur dashboard, yaitu Summary, Overview, dan Detail. Bagian Summary menampilkan ringkasan metrik utama seperti total pinjaman dan status pembayaran. Bagian Overview menyajikan tren dan distribusi pinjaman berdasarkan waktu, demografi, dan wilayah. Sementara itu, bagian Detail menyajikan tabel interaktif yang memungkinkan pengguna mengeksplorasi data individual peminjam dengan filter dan format kondisional untuk analisis lebih mendalam.
-
-
+- This project is intended for educational and portfolio purposes only  
+- The data has been anonymized and does not represent actual operations from any financial institution
