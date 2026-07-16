@@ -69,15 +69,20 @@ Distribution of key metrics by loan status.
 - **Current** (1,098 applications) actually shows the **highest average interest rate of the three (15.10%)** and DTI of **14.72%** — even higher than Charged Off, warranting continued monitoring as these loans may be at risk of shifting into default.
 
 ### Overview – Application, Funding & Repayment Patterns
-
 Analysis of application, funding, and repayment patterns by time, loan purpose, term, region, and borrower characteristics.
- 
+
+<img width="701" height="256" alt="Screenshot 2026-07-16 100607" src="https://github.com/user-attachments/assets/ef08a1e8-8da7-4cbf-bbaf-3aec5ff82343" />
+
 **Insight:**
 - Application volume, funded amount, and amount received all grew consistently throughout the year (from ~2.3K in January to ~4.3K in December) — indicating steady portfolio growth rather than seasonal spikes.
 - All three metrics are dominated by the **Debt Consolidation** loan purpose (18.2K applications, far above Credit Card at ~5.0K and Other at ~3.8K) and the **60-month term** (28K applications/73.2% vs. 10K/26.8% for the 36-month term) — pointing to risk concentration within a single loan profile.
 - Borrowers with **10+ years** of employment length contribute the most compared to other employment-length groups, suggesting the portfolio is dominated by borrowers with a long work history — a generally more stable risk profile.
-- Geographically, **California** is by far the largest contributor to both applications and funded amount compared to other states, indicating a concentration of portfolio exposure in a single region.
+- The portfolio is also dominated by borrowers with **Mortgage** as their home ownership status, followed by **Rent**, with owned homes making up only a small share — indicating most borrowers still carry an active mortgage obligation alongside their loan.
+- Geographically, **California** is by far the largest contributor to both applications and funded amount, followed at a distance by **Texas** and **New York** — indicating portfolio exposure is concentrated in a small number of states.
+
 ### Detail – Loan-Level Data
+<img width="852" height="323" alt="image" src="https://github.com/user-attachments/assets/0daea5c9-010f-4017-b92c-cf89251d78c8" />
+
 Individual loan-level view for further investigation.
  
 **Insight:**
