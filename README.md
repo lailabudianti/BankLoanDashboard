@@ -39,27 +39,37 @@ The dataset contains bank loan data covering application information, borrower c
 ## 📊 Dashboard Breakdown & Insights
  
 ### Summary – Portfolio Snapshot
+<img width="877" height="78" alt="Screenshot 2026-07-16 100000" src="https://github.com/user-attachments/assets/a6fbed29-d995-4785-be02-10d39507095e" />
+
 Key metrics summarizing the overall health of the loan portfolio.
  
 **Insight:**
 - Total loan applications recorded at **38.6K**, with a Month-to-Date increase of **4.3K** and Month-over-Month growth of **6.91%**.
 - Total funded amount reached **$435.8M**, while total amount received reached **$473.1M**, indicating a larger cash inflow than the funds disbursed.
 - The portfolio's average interest rate stands at **12.05%** and average DTI at **13.33%**, providing a baseline risk profile for borrowers overall.
+
 ### Summary – Good Loan vs Bad Loan
+<img width="870" height="161" alt="image" src="https://github.com/user-attachments/assets/adf2e7f1-9c98-4269-aac4-aec8e21a6a9e" />
+
 Loan quality segmentation based on loan status.
  
 **Insight:**
 - **86.2%** of total applications are classified as good loans (**33.2K applications**), with total funded amount of **$370.2M** and total amount received of **$435.8M**.
 - **13.8%** of applications are classified as bad loans (**5.3K applications**), with funded amount of **$65.5M** and amount received of **$37.3M**.
 - The gap in contribution between good and bad loans shows that portfolio performance is concentrated in the healthy loan segment.
+
 ### Summary – Loan Status Detail
+<img width="868" height="169" alt="image" src="https://github.com/user-attachments/assets/fc63e914-fd42-40aa-8b1f-e4ea1ea4e2a3" />
+
 Distribution of key metrics by loan status.
  
 **Insight:**
 - **Fully Paid** dominates both application volume (32,145) and total amount received ($411.59M), with the lowest average interest rate (**11.64%**) and a DTI of **13.17%**.
 - **Charged Off** (5,333 applications) has an average interest rate of **13.88%** and DTI of **14.00%** — higher than Fully Paid, as expected for defaulted loans.
 - **Current** (1,098 applications) actually shows the **highest average interest rate of the three (15.10%)** and DTI of **14.72%** — even higher than Charged Off, warranting continued monitoring as these loans may be at risk of shifting into default.
+
 ### Overview – Application, Funding & Repayment Patterns
+
 Analysis of application, funding, and repayment patterns by time, loan purpose, term, region, and borrower characteristics.
  
 **Insight:**
