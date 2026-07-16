@@ -121,7 +121,9 @@ Individual loan-level view for further investigation.
 
 ---
 
-## 📷 Dashboard Preview
+## 📷 Full Dashboard Pages
+
+A complete look at each dashboard page for quick visual reference.
 
 <p align="center">
   <img src="https://github.com/lailabudianti/BankLoanDashboard/blob/main/Project%20Bank%20Loan_Summary.jpg?raw=true" width="70%"/>
