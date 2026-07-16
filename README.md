@@ -1,33 +1,108 @@
-## 🏦 Bank Loan Analytics Dashboard
-
-The dashboard consists of three main sections:
-
-- **Summary**  
-  Provides an overall snapshot of loan performance, including total loan applications, funded amounts, amount received, average interest rates, and average debt-to-income (DTI) ratios. It also displays the proportion of good vs. bad loans, along with Month-to-Date (MTD) and Month-over-Month (MoM) indicators.
-
-- **Overview**  
-  Visualizes trends and distributions of loan applications by time (monthly), purpose, loan term, home ownership status, employment length, and geographical region. This section helps uncover demand patterns and borrower segmentation.
-
-- **Detail**  
-  An interactive table displaying individual loan records, including ID, loan purpose, interest rate, installment amount, and payment status. It is equipped with dynamic filters, allowing users to explore specific cases or segments in greater detail.
-
+# 🏦 Bank Loan Analytics Dashboard
+ 
+End-to-end loan performance analysis focusing on application trends, funding efficiency, and risk indicators to support data-driven lending decisions.
+ 
 ---
-
-## 🛠 Tools & Technologies
-
-- **Microsoft Power BI Desktop** – for interactive data visualization and dashboard development  
-- **Microsoft SQL Server** – as the primary data source   
-- **DAX (Data Analysis Expressions)** – to calculate custom metrics and support dashboard logic  
-- **Many-to-One Data Relationships** – used to link the main loan dataset with a date reference table for time-based analysis
-
+ 
+## 🎯 Project Overview
+ 
+This project focuses on analyzing a bank's loan portfolio to support centralized monitoring of loan performance, portfolio quality, and cash flow. As loan application volume grows, stakeholders need a clear summary to understand the current state of the portfolio and its distribution patterns across various business dimensions.
+ 
+A Power BI dashboard was developed as an interactive analytical solution that allows users to monitor key loan metrics, distinguish performance between good loans and bad loans, and explore application, disbursement, and repayment patterns down to the individual loan level.
+ 
 ---
-
-## 🎯 Project Objectives
-
-- Provide a comprehensive analysis of bank loan performance  
-- Support risk profiling and repayment behavior assessment  
-- Deliver a visual tool to assist managers and analysts in data-driven decision-making  
-- Apply best practices in Power BI and SQL Server integration for business reporting
+ 
+## 🔍 Business Questions
+ 
+- What is the overall condition of the loan portfolio in terms of application volume, funded amount, and payments received?
+- What proportion of the current portfolio consists of good loans versus bad loans?
+- How are loan applications distributed by time, loan purpose, region, and borrower characteristics?
+- In which areas is the most loan funding disbursed and the most payments received?
+- How can loan-level detail data support further investigation and validation of aggregate findings?
+---
+ 
+## 📊 Dataset Overview
+ 
+The dataset contains bank loan data covering application information, borrower characteristics, loan status, funded amounts, payments received, and key financial metrics such as interest rate and debt-to-income ratio (DTI).
+ 
+---
+ 
+## 🛠️ Tools & Technologies
+ 
+- **Microsoft Power BI Desktop** – for data modeling and interactive visualization
+- **Microsoft SQL Server** – as the primary data source
+- **DAX (Data Analysis Expressions)** – for KPIs, time intelligence, and custom aggregate calculations
+- **Power Query** – for data cleaning and transformation
+- **Many-to-One Data Relationships** – linking the main loan dataset with a date reference table for time-based analysis
+---
+ 
+## 📊 Dashboard Breakdown & Insights
+ 
+### Summary – Portfolio Snapshot
+Key metrics summarizing the overall health of the loan portfolio.
+ 
+**Insight:**
+- Total loan applications recorded at **38.6K**, with a Month-to-Date increase of **4.3K** and Month-over-Month growth of **6.91%**.
+- Total funded amount reached **$435.8M**, while total amount received reached **$473.1M**, indicating a larger cash inflow than the funds disbursed.
+- The portfolio's average interest rate stands at **12.05%** and average DTI at **13.33%**, providing a baseline risk profile for borrowers overall.
+### Summary – Good Loan vs Bad Loan
+Loan quality segmentation based on loan status.
+ 
+**Insight:**
+- **86.2%** of total applications are classified as good loans (**33.2K applications**), with total funded amount of **$370.2M** and total amount received of **$435.8M**.
+- **13.8%** of applications are classified as bad loans (**5.3K applications**), with funded amount of **$65.5M** and amount received of **$37.3M**.
+- The gap in contribution between good and bad loans shows that portfolio performance is concentrated in the healthy loan segment.
+### Summary – Loan Status Detail
+Distribution of key metrics by loan status.
+ 
+**Insight:**
+- **Fully Paid** dominates both application volume (32,145) and total amount received ($411.59M), with the lowest average interest rate (**11.64%**) and a DTI of **13.17%**.
+- **Charged Off** (5,333 applications) has an average interest rate of **13.88%** and DTI of **14.00%** — higher than Fully Paid, as expected for defaulted loans.
+- **Current** (1,098 applications) actually shows the **highest average interest rate of the three (15.10%)** and DTI of **14.72%** — even higher than Charged Off, warranting continued monitoring as these loans may be at risk of shifting into default.
+### Overview – Application, Funding & Repayment Patterns
+Analysis of application, funding, and repayment patterns by time, loan purpose, term, region, and borrower characteristics.
+ 
+**Insight:**
+- Application volume, funded amount, and amount received all grew consistently throughout the year (from ~2.3K in January to ~4.3K in December) — indicating steady portfolio growth rather than seasonal spikes.
+- All three metrics are dominated by the **Debt Consolidation** loan purpose (18.2K applications, far above Credit Card at ~5.0K and Other at ~3.8K) and the **60-month term** (28K applications/73.2% vs. 10K/26.8% for the 36-month term) — pointing to risk concentration within a single loan profile.
+- Borrowers with **10+ years** of employment length contribute the most compared to other employment-length groups, suggesting the portfolio is dominated by borrowers with a long work history — a generally more stable risk profile.
+- Geographically, **California** is by far the largest contributor to both applications and funded amount compared to other states, indicating a concentration of portfolio exposure in a single region.
+### Detail – Loan-Level Data
+Individual loan-level view for further investigation.
+ 
+**Insight:**
+- Data is presented down to the individual loan level, including ID, loan purpose, grade, sub-grade, term, funded amount, interest rate, installment, and amount received.
+- Equipped with dynamic filters (State, Grade, Good vs Bad), enabling quick exploration and validation of aggregate findings from the Summary and Overview sections without re-aggregating the data.
+---
+ 
+## 📈 Key Insights
+ 
+- The loan portfolio is predominantly good loans (86.2%), contributing the most to funded amount and amount received.
+- The **Current** status shows a higher risk profile (interest rate & DTI) than Charged Off — an early warning signal worth monitoring.
+- Loan demand is highest for **Debt Consolidation** purposes and **60-month** terms, with geographic concentration in **California**.
+- Borrowers with **10+ years** of employment length dominate application volume, suggesting an overall more stable borrower profile.
+---
+ 
+## 💡 Business Implications
+ 
+- **The Current status, with the highest interest rate and DTI, deserves priority attention.** The average interest rate for Current loans (15.10%) is higher than both Charged Off (13.88%) and Fully Paid (11.64%), as is the DTI (14.72% vs. 14.00% vs. 13.17%). This pattern suggests that some active loans carry a risk profile equal to or higher than loans that have already defaulted — the collections team should prioritize monitoring Current loans with a DTI above 14%.
+- **Risk is concentrated in Debt Consolidation, 60-month terms, and California.** These three dimensions consistently dominate both volume and value across the portfolio. The risk team should consider setting a separate exposure limit or monitoring process for loans combining all three characteristics, since a quality decline in this segment would have the largest impact on the overall portfolio.
+- **Heavy reliance on good loans (86.2%) makes the portfolio sensitive to small shifts.** Because overall portfolio performance is heavily supported by the good loan segment, even a small decline in this segment's quality (e.g., due to macroeconomic changes) could significantly affect total amount received. A simple stress test simulating a 5–10% decline in good loans is recommended.
+- **Loan-level data speeds up validation without re-analysis.** Access to individual loan-level data allows the risk/collections team to quickly investigate specific cases (e.g., loans with extreme DTI) without waiting for a new aggregate report — accelerating the operational decision-making cycle.
+---
+ 
+## 🎓 Skills Demonstrated
+ 
+**Technical**
+- Data modeling and data processing in Power BI
+- DAX for KPIs, time intelligence, and aggregate calculations
+- Power Query for data cleaning and transformation
+- Building interactive dashboards with filters and page navigation
+**Business**
+- Data-driven portfolio monitoring
+- Loan quality segmentation (risk profiling)
+- Distribution and exposure concentration analysis
+- Translating data findings into actionable business recommendations
 
 ---
 
@@ -41,7 +116,7 @@ The dashboard consists of three main sections:
 
 ---
 
-## 📝 Notes
-
-- This project is intended for educational and portfolio purposes only  
-- The data has been anonymized and does not represent actual operations from any financial institution
+## 🔖 Notes
+ 
+- This project was built following a tutorial as a learning exercise, with additional exploration and insights developed independently.
+- The data has been anonymized and does not represent the actual operations of any financial institution.
